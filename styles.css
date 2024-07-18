@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: #f5f2eb;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    margin-left: 18%;
+    margin-right: 18%;
+    background-color: #333333;
+    margin-top: 3%;
+    border-radius: 50px;
+}
+
+nav a{
+    padding: 5%;
+    color: white;
+    text-decoration: none;
+    font-family: "Teko", sans-serif; 
+    font-size: 13px;  
+    padding-top: 2%;
+    padding-bottom:2%;
+}
+
+nav a:hover{
+    color: #ca9e58;
+}
+
+nav img{
+    width: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.log {
+    margin-top:2%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.log img{
+    background-color: #333333;
+    width: 6vw;
+    position: absolute;
+    border-radius: 50%;
+}
+
+#Hero{
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 75vh;
+}
+
+.tagline{
+    width: 100%x;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 3vw;
+    color: #523726;
+    font-weight: 500;
+}
+.bgimg{
+    position:absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+.bgimg img{
+    width: 4%;
+    padding-left:20%;
+    opacity: 0.7;
+}
+
+.bg{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: -2;
+}
+
+.bg img{
+    display: none;
+}
+
+.estb{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3vw;
+    font-weight:700;
+}
+.bgText{
+    padding-top: 5%;
+    position: absolute;
+    z-index: 0;
+    font-size: 25vw;
+    opacity: 0.05;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+.estb img{
+    z-index: 1;
+    width: 30%;
+}
+
+.estb p{
+    padding-top: 1%;
+}
+
+#story{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5%;
+}
+
+.title{
+    padding-top: 5%;
+    font-family: "Teko", sans-serif; 
+    font-size: 5vw;
+    color: #333333;
+}
+
+#story p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1vw;
+    font-weight: 500;
+    color: #333333;
+    padding-left: 30%;
+    padding-right: 30%;
+    word-spacing: 4%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.strbg{
+    position: absolute;
+    width: 100%;
+    display:flex;
+    z-index: -1;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.strbg img{
+    padding-left: 90vw;
+    padding-top: 40vw;
+}
+
+#menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #ece8dd;
+    overflow: hidden;
+}
+
+.menu{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 5%;
+    z-index: 2;
+}
+
+.item{
+    width: 35%;
+    padding: 2%;
+    padding-left: 10%;
+}
+
+.head{
+    font-family: "montserrat", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.desc{
+    font-size: 13px;
+    padding-top: 1%;
+    font-family: "montserrat", sans-serif;
+    color: #6a6868;
+    font-weight: 600;
+}
+
+.m1{
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+.m2{
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.m1 img{
+    width: 25%;
+    padding-left: 85vw;
+    padding-top: 30vw;
+    
+}
+
+.m2 img{
+    width: 13%;
+    padding-right: 90vw;
+    padding-bottom: 20vw;
+}
+
+#blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5%;
+    background-color: #f5f2eb;
+}
