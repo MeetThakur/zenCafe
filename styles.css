@@ -474,6 +474,12 @@ button{
     padding-bottom: 5%;
 }
 
+button:hover{
+    scale: 1.1;
+    background-color: #ca9e58;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s ;
+}
+
 @media (max-width:600px){
 
     nav{
