@@ -263,12 +263,17 @@ nav img{
     padding-bottom: 5%;
     z-index: 2;
 }
-
+.mimg img{
+    width: 4vw;
+}
 .item{
+    display: flex;
+    align-items: center;
     width: 35%;
     padding: 2%;
-    padding-left: 10%;
+    gap: 5%;
 }
+
 
 .head{
     font-family: "montserrat", sans-serif;
@@ -370,8 +375,9 @@ nav img{
 
 .bbg{
     position: absolute;
-    width: 10%;
+    width: 7%;
     z-index: 1;
+    opacity: 0.9;
     padding-top: 30%;
     left: 0;
 }
@@ -638,9 +644,20 @@ button:hover{
     }
 
     #menu{
-        padding-bottom: 5%;
+        padding-top: 5%;
     }
 
+    .menu{
+        padding-top: 2%;
+    }
+
+    .item{
+        width: 80%;
+    }
+
+    .mimg img{
+        width: 7vh;
+    }
     .m1 img{
         width: 70%;
         padding-left: 70vw;
@@ -691,12 +708,12 @@ button:hover{
         width: 70%;
     }
     #book{
-        padding-top: 10%;
+        padding-top: 3%;
         padding-bottom: 15%;
     }
 
     #book .title{
-        padding-bottom: 30px;
+        padding-bottom: 3%;
     }
 
     button{
@@ -724,3 +741,4 @@ button:hover{
         border-top: 5px solid #434343;
     }
 }
+
