@@ -7,6 +7,83 @@ body{
     margin: 0;
     overflow-x: hidden;
 }
+html{
+    overflow-y: hidden;
+}
+
+.loader {
+    position: fixed;
+    z-index: 990;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cup {
+    display: flex;
+    position: relative;
+    width: 110px;
+    height: 90px;
+    border: 8px solid #ffefdb;
+    box-shadow: 0 0 0 12px #352a22;
+    border-radius: 10px 10px 60px 75px;
+    background: url('../images/coffee.png');
+    background-repeat: repeat-x;
+    background-position: 0 130px;
+    animation: filling 4s infinite;
+}
+
+@keyframes filling {
+    0%, 100% {
+        background-position: 0 130px;
+    }
+
+    50% {
+        background-position: 600px -70px;
+    }
+}
+
+.cup .cup-handle {
+    position: absolute;
+    top: -5px;
+    right: -62px;
+    width: 32.5px;
+    height: 60px;
+    border: 12px solid #352a22;
+    border-radius: 10px 10px 30px 20px;
+}
+
+.cup .steam {
+    position: absolute;
+    border-radius: 10px 2px;
+    width: 8px;
+    animation: steaming 2s infinite;
+}
+
+@keyframes steaming {
+    0%, 100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        filter: blur(.8px);
+        transform: translateY(-10px);
+    }
+}
+
+.cup .steam:nth-child(1) {
+    top: -70px;
+    left: 65px;
+    height: 30px;
+    background: #8e5a3423;
+    animation-delay: .2s;
+}
 
 nav{
     display: flex;
@@ -475,9 +552,9 @@ button{
 }
 
 button:hover{
-    scale: 1.1;
+    scale: 1.03;
     background-color: #ca9e58;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s ;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.01s ;
 }
 
 @media (max-width:600px){
