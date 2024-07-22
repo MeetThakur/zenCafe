@@ -158,7 +158,7 @@ gsap.from('.m2', {
         scrub:2,
     },
     opacity:0,
-    x:-250,
+y:-200,
 })
 
 gsap.from('#blog .title', {
@@ -170,6 +170,17 @@ gsap.from('#blog .title', {
     },
     opacity:0,
     y:-100,
+})
+
+gsap.from('.bbg', {
+    scrollTrigger: {
+        trigger: '#blog',
+        start: 'top 20%',
+        end: 'top 0%',
+        scrub:2,
+    },
+    opacity:0,
+    x:-100,
 })
 
 
@@ -217,3 +228,15 @@ gsap.from('.bookbg', {
     },
     opacity:0,
 })
+
+gsap.from('#contact .imggrid', {
+    scrollTrigger: {
+        trigger: '#contact',
+        start: 'top 80%',
+        end: 'top 60%',
+        scrub:2,
+    },
+    opacity:0,
+    x:-100,
+})
+
