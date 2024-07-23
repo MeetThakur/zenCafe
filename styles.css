@@ -564,11 +564,17 @@ button:hover{
 
 @media (max-width:600px){
 
+
     nav{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 4%;
         width: 100%;
+        margin:0;
         border-radius: 0px;
         justify-content: space-evenly;
     }
+
 
     nav a{
         font-size: 10px;
