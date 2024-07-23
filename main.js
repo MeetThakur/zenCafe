@@ -1,15 +1,15 @@
 
 gsap.registerPlugin(ScrollTrigger) 
 
-var line = document.querySelector('.line');
-var width = line.offsetWidth;
-var ipath = `M 0 50 Q ${width/2} 50 ${width} 50`;
+let line = document.querySelector('.line');
+let width = line.offsetWidth;
+let ipath = `M 0 50 Q ${width/2} 50 ${width} 50`;
 
-var path = document.querySelector('.path');
+let path = document.querySelector('.path');
 path.setAttribute('d', ipath);
 
 line.addEventListener('mousemove', function(e) {
-    var d = `M 10 50 Q ${line.offsetWidth/2} ${e.clientY - line.getBoundingClientRect().top} ${line.offsetWidth} 50`;
+    let d = `M 10 50 Q ${line.offsetWidth/2} ${e.clientY - line.getBoundingClientRect().top} ${line.offsetWidth} 50`;
     gsap.to("svg path",{
         attr: {d: d},
 })
@@ -24,7 +24,7 @@ line.addEventListener('mouseleave', function(e) {
 });
 
 
-var tl  = gsap.timeline();
+let tl  = gsap.timeline();
 
 tl.to(".loader",{
 	delay: 3,
